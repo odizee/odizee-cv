@@ -1,5 +1,8 @@
 import photo from "../assets/Odizee-Suit.jpeg";
 import "./styles/CompStyle.scss";
+import location from "../assets/location.png";
+import mail from "../assets/mail.png";
+import phone from "../assets/phone-call.png";
 
 const Header = () => {
   return (
@@ -7,7 +10,7 @@ const Header = () => {
       <div className="image">
         <img src={photo} alt="" />
       </div>
-      <div>
+      <div className="intro">
         <div className="details">
           <h2>
             Odiri <span>Ighogboja</span>
@@ -16,12 +19,15 @@ const Header = () => {
         </div>
         <div className="contact">
           <div className="contact__item">
-            <span>Image</span> <p>08096294786</p>
+            <img src={phone} alt="" /> <p>08096294786</p>
           </div>
           <div className="contact__item">
-            <span>Image</span> <p>odizeeplatform@gmail.com</p>
+            <img src={mail} alt="" /> <p>odizeeplatform@gmail.com</p>
           </div>
-          <div className="contact__item">43 Moronfolu street Akoka, Lagos</div>
+          <div className="contact__item">
+            <img src={location} alt="" />
+            <p>43 Moronfolu street Akoka, Lagos</p>
+          </div>
         </div>
       </div>
     </div>
