@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    background: #2A3547;
+    column-gap: 3rem;
+
+    .image {
+        width: 15%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .details {
+        color: #fff;
+        margin-bottom: 2rem;
+        h2 {
+            color: #fff;
+            span {
+                color: #87C03D;
+            }
+        }
+
+        h4 {
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: .2rem;
+            width: 5%;
+            background-color: #87C03D;
+        }
+    }
+
+}
