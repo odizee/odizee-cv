@@ -61,3 +61,47 @@
     }
 
 }
+
+.background {
+
+    h4 {
+        color: #fff;
+        margin-bottom: .5rem;
+    }
+    
+    
+    
+    hr{
+        background-color: #87C03D;
+        height: 1px; 
+        border: 0;
+        margin-bottom: 2rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: .3rem;
+            width: 4%;
+            margin-top: -.2rem;
+            background-color: #87C03D;
+        }
+    }
+        
+    p {
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+    
+    ul {
+        margin-bottom: 2rem;
+        li {
+            list-style-type: none;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.achievement {
+    background-color: #2A3547;
+}

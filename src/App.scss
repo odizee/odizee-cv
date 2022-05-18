@@ -11,16 +11,44 @@ body {
     font-family: Poppins;
     max-width: 1200px;
     margin: auto;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 1.6rem;
+}
+
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 p {
     font-size: 1.2rem;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
+.main {
+    display: flex;
+}
+
+.app-achievment {
+    margin: 2rem;
+}
+
+.app-background {
+    display: fixed;
+    width: 23rem;
+    background: #2A3547;
+    padding: 3rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
 }

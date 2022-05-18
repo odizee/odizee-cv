@@ -15,7 +15,7 @@ const Header = () => {
           <h2>
             Odiri <span>Ighogboja</span>
           </h2>
-          <h4>Frontend Developer</h4>
+          <h3>Frontend Developer</h3>
         </div>
         <div className="contact">
           <div className="contact__item">
