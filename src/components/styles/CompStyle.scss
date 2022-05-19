@@ -54,7 +54,7 @@
             img {
                 background: #87C03D;
                 padding: .5rem;
-                width: 5%;
+                width: 8%;
                 border-radius: 5px;
             }
         }
@@ -62,7 +62,7 @@
 
 }
 
-.background {
+.background, .education, .experience {
 
     h4 {
         color: #fff;
@@ -103,5 +103,29 @@
 }
 
 .achievement {
-    background-color: #2A3547;
+    // background-color: #2A3547;
+    padding: 1rem;
+
+    .education, .experience {
+
+        h4 {
+            color: #87C03D;
+        }
+
+        li, p {
+            color: rgb(62, 62, 62);
+        }
+    }
+}
+
+.cover {
+    
+    h3 {
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+        word-break: break-all;
+    }
 }
