@@ -24,7 +24,7 @@ function App() {
             <div className="switch-button">
               <input className="switch-button-checkbox" type="checkbox"></input>
               <label className="switch-button-label" for="">
-                <span className="switch-button-label-span">Photo</span>
+                <span className="switch-button-label-span">CV</span>
               </label>
             </div>
           </div>
