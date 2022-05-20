@@ -13,7 +13,6 @@ function App() {
   };
   return (
     <div className="App">
-      <Header />
       <div className="main">
         <div className="app-background">
           <Background />
