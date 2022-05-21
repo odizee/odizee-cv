@@ -12,7 +12,6 @@ body {
     font-family: Poppins;
     max-width: 1200px;
     margin: auto;
-    padding: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100%;
     
@@ -48,18 +47,16 @@ li {
 }
 
 .app-achievment {
-    margin: 2rem;
+    margin-left: 38rem;
     width: 70rem;
+    height: 100vh;
 }
 
 .app-background {
-    display: fixed;
-    width: 28rem;
+    position: fixed;
+    width: 32rem;
     background: #2A3547;
     padding: 3rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-
 }
 
 
@@ -79,7 +76,8 @@ li {
   
 
   &:before {
-    content: "cover";
+    content: "cover letter";
+    content: "cover letter";
     position: absolute;
     top: 0;
     bottom: 0;

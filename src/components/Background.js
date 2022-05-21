@@ -3,6 +3,7 @@ import "./styles/CompStyle.scss";
 import location from "../assets/location.png";
 import mail from "../assets/mail.png";
 import phone from "../assets/phone-call.png";
+import ProgressBar from "./ProgressBar";
 
 const Background = () => {
   return (
@@ -47,13 +48,48 @@ const Background = () => {
         <h4>Skills</h4>
         <hr />
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>Next</li>
-          <li>Wordpress</li>
-          <li>Redux</li>
+          <li>
+            HTML{" "}
+            <span>
+              <ProgressBar done="90" />
+            </span>
+          </li>
+          <li>
+            CSS{" "}
+            <span>
+              <ProgressBar done="90" />
+            </span>
+          </li>
+          <li>
+            Javascript{" "}
+            <span>
+              <ProgressBar done="80" />
+            </span>
+          </li>
+          <li>
+            React{" "}
+            <span>
+              <ProgressBar done="80" />
+            </span>
+          </li>
+          <li>
+            Next{" "}
+            <span>
+              <ProgressBar done="80" />
+            </span>
+          </li>
+          <li>
+            Wordpress{" "}
+            <span>
+              <ProgressBar done="75" />
+            </span>
+          </li>
+          <li>
+            Redux
+            <span>
+              <ProgressBar done="75" />
+            </span>
+          </li>
         </ul>
       </div>
       <div className="hobbies">
