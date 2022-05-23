@@ -39,7 +39,7 @@ body {
     font-family: Poppins;
     max-width: 1200px;
     margin: auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100vh;
     
     @media (max-width: 26em) {
@@ -82,7 +82,7 @@ li {
 .app-achievment {
     margin-left: 38rem;
     width: 70rem;
-    height: 100vh;
+    height: 100%;
     
     @media (max-width: 56.25em) {
         width: 100%;
@@ -112,7 +112,7 @@ li {
   display: flex;
   padding: 1rem;
   overflow: hidden;
-  position: absolute;
+  // position: absolute;
   bottom: 1rem;
 }
 
