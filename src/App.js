@@ -8,7 +8,6 @@ function App() {
 
   const handleToggle = () => {
     setToggle(!toggle);
-    console.log(toggle);
   };
   return (
     <div className="App">
