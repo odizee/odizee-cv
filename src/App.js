@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import "./App.scss";
 import Background from "./components/Background";
 import Achivements from "./components/Achivements";

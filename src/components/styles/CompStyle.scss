@@ -62,10 +62,6 @@
         }
     }
 
-    .intro {
-        // width: 35%;
-    }
-
     .details {
         color: #fff;
         margin-bottom: 3rem;
@@ -75,9 +71,6 @@
             span {
                 color: var(--primary-color);
             }
-        }
-
-        h4 {
         }
 
         &::after {
@@ -148,7 +141,6 @@
 }
 
 .achievement, .cover {
-    // background-color: #2A3547;
     padding: 1rem;
 
     .education, .experience {
@@ -177,8 +169,6 @@
 }
 
 //Progress Bar
-
-
 .progress {
 	background-color: #d8d8d8;
 	border-radius: 20px;
@@ -190,7 +180,6 @@
 
 .progress-done {
 	background: linear-gradient(to left, #F2709C, #FF9472);
-	// box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
 	border-radius: 20px;
 	color: #fff;
 	display: flex;
