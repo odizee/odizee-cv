@@ -19,13 +19,21 @@ function App() {
         </div>
         <div className="app-achievment">
           {toggle ? <Achivements /> : <Cover />}
-          <div onClick={handleToggle}>
-            <div className="switch-button">
-              <input className="switch-button-checkbox" type="checkbox"></input>
-              <label className="switch-button-label" for="">
-                <span className="switch-button-label-span">CV</span>
-              </label>
-            </div>
+          <div className="toggle">
+            <label htmlFor="toggle">
+              <input
+                className="input"
+                onClick={handleToggle}
+                type="checkbox"
+                id="toggle"
+              />
+              <div className="toggle-wrapper">
+                <span className="selector"></span>
+              </div>
+              <p className="notification">
+                <span className="selected"></span>
+              </p>
+            </label>
           </div>
         </div>
       </div>

@@ -4,8 +4,18 @@ import location from "../assets/location.png";
 import mail from "../assets/mail.png";
 import phone from "../assets/phone-call.png";
 import ProgressBar from "./ProgressBar";
+import Soccer from "./svg/Soccer";
+import { useState } from "react";
+import Movie from "./svg/Movie";
+import Reading from "./svg/Reading";
 
 const Background = () => {
+  const [showAnim, setShowAnim] = useState({
+    ball: false,
+    tv: false,
+    read: false,
+  });
+
   return (
     <div className="background">
       <div className="header">
@@ -96,9 +106,24 @@ const Background = () => {
         <h4>Hobbies</h4>
         <hr />
         <ul>
-          <li>Football</li>
-          <li>Reading</li>
-          <li>Binge Watching movies</li>
+          <li>
+            <p onClick={(e) => setShowAnim({ ball: !showAnim.ball })}>
+              Football
+            </p>{" "}
+            {showAnim.ball && <Soccer />}
+          </li>
+          <li>
+            <p onClick={(e) => setShowAnim({ tv: !showAnim.tv })}>
+              Binge Watching movies
+            </p>
+            {showAnim.tv && <Movie />}
+          </li>
+          <li>
+            <p onClick={(e) => setShowAnim({ read: !showAnim.read })}>
+              Reading
+            </p>
+            {showAnim.read && <Reading />}
+          </li>
         </ul>
       </div>
     </div>

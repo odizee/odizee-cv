@@ -1,3 +1,16 @@
+:root {
+  --background-color: #2A3547;
+  --svg-color: #F2709C;
+  --primary-color: #87C03D;
+
+  //Toggle
+  --line: #505162;
+  --dot: #87C03D;
+  --circle: #9EA0BE;
+  --duration: .3s;
+  --text: #9EA0BE;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +18,7 @@
 }
 
 html {
+    -webkit-font-smoothing: antialiased;
     font-size: 62.5%;
         @media (max-width: 75em) {
         font-size: 56.25%;
@@ -14,7 +28,7 @@ html {
         font-size: 50%;
       }
 
-    @media (max-width: 23.43em) {
+    @media (max-width: 26em) {
         font-size: 35.25%;
       }
 
@@ -25,8 +39,11 @@ body {
     max-width: 1200px;
     margin: auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    height: 100%;
+    height: 100vh;
     
+    @media (max-width: 26em) {
+      box-shadow: none;
+      }
 }
 
 h2 {
@@ -56,12 +73,25 @@ li {
 
 .main {
     display: flex;
+    @media (max-width: 56.25em) {
+        flex-direction: column;
+      }
 }
 
 .app-achievment {
     margin-left: 38rem;
     width: 70rem;
     height: 100vh;
+    
+    @media (max-width: 56.25em) {
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+      }
+
+    @media (max-width: 26em) {
+      height: 75vh;
+    }
 }
 
 .app-background {
@@ -69,77 +99,83 @@ li {
     width: 32rem;
     background: #2A3547;
     padding: 3rem;
+
+    @media (max-width: 56.25em) {
+      width: 100%;
+      position: relative;
+      }
 }
 
+// body {
+//   display: grid;
+//   place-content: center;
+//   height: 100vh;
+//   background-color: #fefefe;
+// }
 
-.switch-button {
-  background: #87C03D;
-  border-radius: 30px;
+.toggle {
+  display: flex;
+  padding: 1rem;
   overflow: hidden;
-  width: 24rem;
-  text-align: center;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
-  color: #2A3547;
-  position: relative;
-  padding-right: 12rem;
   position: absolute;
-  bottom: 30px;
-  
+  bottom: 1rem;
+}
 
-  &:before {
-    content: "cover";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -5px;
-    width: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-    pointer-events: none;
-  }
+label {
+  pointer-events: none;
 
-  &-checkbox {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 2;
+  .input {
+    display: none;
 
-    &:checked + .switch-button-label:before {
-      transform: translateX(120px);
-      transition: transform 300ms linear;
+    &:checked + .toggle-wrapper {
+      box-shadow: 0 8px 14px 0 rgba(darken(#3957ee, 12%), 0.12);
     }
 
-    & + .switch-button-label {
-      position: relative;
-      padding: 15px 0;
-      display: block;
-      user-select: none;
-      pointer-events: none;
+    &:checked + .toggle-wrapper > .selector {
+      left: calc(100% - 4rem);
+      background-color: #3957ee;
+    }
 
-      &:before {
-        content: "";
-        background: #fff;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-radius: 30px;
-        transform: translateX(0);
-        transition: transform 300ms;
-      }
+    &:checked ~ .notification > .selected:before {
+      content: 'Cover Letter';
+      font-size: 1.2rem;
+    }
+  }
 
-      .switch-button-label-span {
-        position: relative;
-      }
+  .toggle-wrapper {
+    position: relative;
+    width: 10rem;
+    height: 4rem;
+    background-color: #eaeaea;
+    border-radius: 999px;
+    margin: auto;
+    cursor: pointer;
+    pointer-events: all;
+    box-shadow: 0 8px 14px 0 rgba(darken(#ee5f39, 12%), 0.12);
+    margin-bottom: 1rem;
+
+    .selector {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      background-color: #ee5f39;
+      transition: left 0.25s ease;
+      border-radius: 50%;
+    }
+  }
+
+  .notification {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+
+    .selected:before {
+      content: 'Resume';
+      font-size: 1.2rem;
+      border-bottom: 2px solid;
     }
   }
 }
