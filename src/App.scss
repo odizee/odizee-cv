@@ -30,14 +30,14 @@ html {
       }
 
     @media (max-width: 26em) {
-        font-size: 35.25%;
+        font-size: 40.25%;
       }
 
 }
 
 body {
     font-family: Poppins;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100vh;
@@ -52,19 +52,19 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 li {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .App {
@@ -85,11 +85,12 @@ li {
     height: 100%;
     
     @media (max-width: 56.25em) {
-        width: 100%;
-        height: 100vh;
-        margin-left: 0;
-      }
-
+      width: 100%;
+      height: 100vh;
+      margin-left: 0;
+      padding: 2rem;
+    }
+    
     @media (max-width: 26em) {
       height: 75vh;
     }
@@ -97,7 +98,7 @@ li {
 
 .app-background {
     position: fixed;
-    width: 32rem;
+    width: 35rem;
     background: #2A3547;
     padding: 3rem;
 

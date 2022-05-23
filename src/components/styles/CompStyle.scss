@@ -114,6 +114,11 @@
     padding-right: 1rem;
     height: 95vh;
     overflow-y: scroll;
+    
+    @media (max-width: 56.25em) {
+        overflow-y: visible;
+        height: 100%;
+      }
 
     /* width */
     &::-webkit-scrollbar {
